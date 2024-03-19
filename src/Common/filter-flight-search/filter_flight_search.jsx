@@ -1,31 +1,24 @@
 /** @format */
 
 import React, { useState } from "react";
-import { Divider, Form, Grid, Icon } from "semantic-ui-react";
+import { Grid, Icon } from "semantic-ui-react";
 import { Accordion } from "semantic-ui-react";
 import { Airlines } from "../../mock/mockdata";
 
 import styles from "./filter_flight_search.module.scss";
 
-
 const FilterSearch = () => {
   const [openStops, setOpenStops] = useState(true);
-  const [openDepart, setOpenDepart] = useState(true);
-  const [trip, setTrip] = useState(true);
   const [airlines, setAirlines] = useState(true);
   const [greener, setGreener] = useState(true);
-  const [duration, setDuration] = useState(500);
-  const handleChange = () => {
-    setDuration(duration + 100);
-  };
+
   return (
     <Accordion fluid>
       <Accordion.Title
         className={styles.titleStops}
-        onClick={() => setOpenStops(!openStops)}
-      >
+        onClick={() => setOpenStops(!openStops)}>
         Stops
-        <Icon name="dropdown" />
+        <Icon name='dropdown' />
       </Accordion.Title>
 
       <Accordion.Content active={openStops}>
@@ -68,10 +61,9 @@ const FilterSearch = () => {
 
       <Accordion.Title
         className={styles.titleAirlines}
-        onClick={() => setAirlines(!airlines)}
-      >
+        onClick={() => setAirlines(!airlines)}>
         Airlines
-        <Icon name="dropdown" />
+        <Icon name='dropdown' />
       </Accordion.Title>
 
       <Accordion.Content active={airlines}>
@@ -102,10 +94,9 @@ const FilterSearch = () => {
 
       <Accordion.Title
         className={styles.titleGreenFlights}
-        onClick={() => setGreener(!greener)}
-      >
+        onClick={() => setGreener(!greener)}>
         Greener flights
-        <Icon name="dropdown" />
+        <Icon name='dropdown' />
       </Accordion.Title>
 
       <Accordion.Content active={greener} className={styles.greenChoise}>

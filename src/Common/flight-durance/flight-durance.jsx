@@ -7,12 +7,9 @@ import { Grid } from "semantic-ui-react";
 import { animated, useSpring } from "@react-spring/web";
 const FlightDurance = (obj1) => {
   const obj = obj1.obj;
-  console.log("obj", obj);
-  // const config = useC
   const springs = useSpring({
     from: { x: 0, opacity: 0, y: 5, transform: `scale(0.5)` },
     to: { x: 130, opacity: 1, y: 5, transform: `scale(1.5)` },
-    // transform: `scale(1)`,
     config: {
       mass: 2,
       friction: 50,
@@ -20,7 +17,6 @@ const FlightDurance = (obj1) => {
     },
   });
 
-  // console.log('obj123', obj.obj)
   return (
     <Grid>
       <Grid.Row>
@@ -42,8 +38,6 @@ const FlightDurance = (obj1) => {
                   </animated.div>
 
                   <div className={styles.divider} />
-
-                  {/* </div> */}
                 </div>
                 <span className={styles.time_flight}>
                   {obj.outbound.total_time}
