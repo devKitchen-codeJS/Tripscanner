@@ -13,20 +13,20 @@ export const routes = [
     path: "/",
     element: <StartPage />,
   },
-  // {
-  //   path: "/flight-search",
-  //   element: <FlightSearch />,
-  // },
-  // {
-  //   path: "/admin-profile",
-  //   element: <AdminProfileLayout />,
-  // },
-  // {
-  //   path: "/add",
-  //   // element: <Add />,
-  // },
-  // {
-  //   path: "/ticket-details",
-  //   element: <TicketDetailsPage />,
-  // },
+  {
+    path: "/flight-search",
+    element: <FlightSearch />,
+  },
+  {
+    path: "/admin-profile",
+    element: <AdminProfileLayout />,
+  },
+  {
+    path: "/add",
+    // element: <Add />,
+  },
+  {
+    path: "/ticket-details",
+    element: <TicketDetailsPage />,
+  },
 ];

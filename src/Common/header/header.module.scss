@@ -1,60 +1,37 @@
+/** @format */
+
 :global(#app) {
-	.header {
-		// border: 2px solid 	red;
-		// margin-left: 40vh;
-		// margin-right: 40vh;
-		// padding-top: 25px;
-	}
-	.headerRow {
-		// border: 2px solid blue;
-		
-		// padding-left: 5vh;
-		// padding-right: 5vh;
-	}
-	.logo {
-		font-size: 25px;
-		font-weight: 700;
-		color: #0770e3;
-	}
-	.groupBtn1 {
-		// border: 2px solid red;
-		.groupBtnRow{
-			// border: 2px solid red;
-			// display: flex;
-			// justify-content: end;
-		}
-		.help {
-			// margin-top: 8px;
-			// border: 2px solid red;
-		}
-		.settingsBtn {
-			// border: 2px solid green;
-			.settings {
-				height: 3em;
-				font-size: 12px;
-				border-radius: 8px;
-			}
-		}
-		.login {
-			// margin-top: 10px;
-			font-weight: 600;
-			color: rgb(0, 0, 0);
-			border-radius: 8px;
-		}
-		.login1 {
-			// margin-top: 10px;
-			font-weight: 600;
-			color: rgb(0, 0, 0);
-			border-radius: 8px;
-		}
-	}
-	.flightsBtn {
-		background-color: #0770e3;
-		color: #fff;
-		font-size: 16px;
-		font-weight: 600;
-		&:hover {
-			background-color: #022a55;
-		}
-	}
+  .logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0770e3;
+  }
+  .groupBtn1 {
+    .settingsBtn {
+      .settings {
+        height: 3em;
+        font-size: 12px;
+        border-radius: 8px;
+      }
+    }
+    .login {
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+      border-radius: 8px;
+    }
+    .login1 {
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+      border-radius: 8px;
+    }
+  }
+  .flightsBtn {
+    background-color: #0770e3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover {
+      background-color: #022a55;
+    }
+  }
 }

@@ -2,20 +2,11 @@
 
 :global(#app) {
   .flightsvg {
-    // border: 2px solid black;
-    // padding-top: 12px;
-    // float: right;
     height: 15px;
     width: 15px;
   }
-  
-  .row1 {
-    // margin-top: 5px;
-    // border: 2px solid green;
-    // display: flex;
-    // justify-content: space-between;
 
-    // align-items: baseline;
+  .row1 {
     .flightTo,
     .flightFrom {
       font-size: 20px;
@@ -24,33 +15,20 @@
     .f {
       display: flex;
       align-items: baseline;
-      //   border: 1px solid black;
       .divider {
-        // float: left;
         height: min-content;
         border-bottom: 2px solid rgb(103, 103, 103);
         width: 100%;
         display: inline-flex;
       }
     }
-    :hover .f{
+    :hover .f {
       transition: 0.5s;
       transform: scale(1.05);
     }
     .time_flight {
       display: flex;
       justify-content: center;
-      // border: 1px solid red;
-      // overflow: hidden;
-      // display: flex;
-      // margin-left: 50px;
-      // justify-content: center;
-    }
-  }
-  .row2 {
-    .animate {
-      // border: 1px solid red;
-      // rotate: 180deg;
     }
   }
 }

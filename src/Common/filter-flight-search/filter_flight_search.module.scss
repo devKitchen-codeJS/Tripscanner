@@ -1,106 +1,104 @@
+/** @format */
+
 :global(#app) {
-	.titleStops,
-	.titleDepartureTimes,
-	.titleTripDuration,
-	.titleAirlines,
-	.titleGreenFlights {
-		border-bottom: 2px solid rgb(199, 199, 199);
-		font-size: 18px;
-		color: black;
-	}
+  .titleStops,
+  .titleDepartureTimes,
+  .titleTripDuration,
+  .titleAirlines,
+  .titleGreenFlights {
+    border-bottom: 2px solid rgb(199, 199, 199);
+    font-size: 18px;
+    color: black;
+  }
 
-	.nonStop,
-	.oneStop,
-	.twoStop {
-		display: inline-flex;
-	}
-	.rowOneStop,
-	.rowTowStop {
-		margin-top: -20px;
-	}
+  .nonStop,
+  .oneStop,
+  .twoStop {
+    display: inline-flex;
+  }
+  .rowOneStop,
+  .rowTowStop {
+    margin-top: -20px;
+  }
 
-	.label1 {
-		display: inline;
-		margin-top: 10px;
-		span {
-			margin-left: 10px;
-		}
-		:hover {
-			color: #0c6df5;
-		}
-		.price {
-			display: block;
-			margin-left: 28px;
-			color: #7d8185;
-		}
-	}
-	.customCheckbox {
-		/* removing default appearance */
-		// -webkit-appearance: none;
-		// appearance: none;
-		/* creating a custom design */
-		width: 1.2em;
-		height: 1.2em;
-		border-radius: 1em;
-		border-radius: 5px;
-		border: 0.15em solid #007a7e;
-		cursor: pointer;
-	}
-	.nameAirline {
-		margin-left: 10px;
-		color: #000000;
-	}
-	.priceAirline {
-		display: block;
-		margin-left: 30px;
-		color: #7d8185;
-	}
+  .label1 {
+    display: inline;
+    margin-top: 10px;
+    span {
+      margin-left: 10px;
+    }
+    :hover {
+      color: #0c6df5;
+    }
+    .price {
+      display: block;
+      margin-left: 28px;
+      color: #7d8185;
+    }
+  }
+  .customCheckbox {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 1em;
+    border-radius: 5px;
+    border: 0.15em solid #007a7e;
+    cursor: pointer;
+  }
+  .nameAirline {
+    margin-left: 10px;
+    color: #000000;
+  }
+  .priceAirline {
+    display: block;
+    margin-left: 30px;
+    color: #7d8185;
+  }
 
-	.filterOption {
-		display: inline-flex;
-		color: #0c6df5;
-		height: 50px;
-		margin-top: 10px;
-		font-size: 15px;
-		padding-top: 15px;
-		.selctAll {
-			margin-right: 10px;
-		}
-		.divider {
-			width: 1px;
-			max-height: 40px;
-			background-color: #b7b9bb;
-			margin-top: -10px;
-		}
-		.clearAll {
-			padding-left: 10px;
-		}
-	}
+  .filterOption {
+    display: inline-flex;
+    color: #0c6df5;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    padding-top: 15px;
+    .selctAll {
+      margin-right: 10px;
+    }
+    .divider {
+      width: 1px;
+      max-height: 40px;
+      background-color: #b7b9bb;
+      margin-top: -10px;
+    }
+    .clearAll {
+      padding-left: 10px;
+    }
+  }
 
-	.airlineOption {
-		margin-top: -20px;
-		margin-left: 20px;
-		margin-bottom: 20px;
-		span {
-			display: block;
-			margin-top: 10px;
-			font-size: 15px;
-			color: #0c6df5;
-			font-weight: 600;
-		}
-	}
-	.airlines {
-		margin-top: 10px;
-	}
-	.greenChoise {
-		display: inline-flex;
-		.greenerT {
-			margin-left: 10px;
-		}
-		:hover {
-			span {
-				color: #0c6df5;
-			}
-		}
-	}
+  .airlineOption {
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    span {
+      display: block;
+      margin-top: 10px;
+      font-size: 15px;
+      color: #0c6df5;
+      font-weight: 600;
+    }
+  }
+  .airlines {
+    margin-top: 10px;
+  }
+  .greenChoise {
+    display: inline-flex;
+    .greenerT {
+      margin-left: 10px;
+    }
+    :hover {
+      span {
+        color: #0c6df5;
+      }
+    }
+  }
 }
