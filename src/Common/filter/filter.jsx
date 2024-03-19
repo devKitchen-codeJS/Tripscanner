@@ -65,7 +65,6 @@ const Filter = () => {
   const [resToState, setResToState] = useState([]);
 
   const handleSearch = () => {
-    // console.log("fix");
     let params = {
       from: selectedOptionFrom,
       to: selectedOptionTo,
@@ -91,7 +90,6 @@ const Filter = () => {
   }, [resAllClasses]);
 
   useEffect(() => {
-    // console.log('resultFrom', resultFrom)
     setResFromState([]);
     setResFromState(resultFrom);
   }, [resultFrom]);
@@ -194,16 +192,14 @@ const Filter = () => {
             options={resAllClasses}
             onChange={(e, data) => {
               setSelectedOptionClass(data.value);
-              // console.log('[data]', data)
             }}
-            // value={valueTo}
           />
         </Grid.Column>
 
         <Grid.Column width={4} className={styles.filter}>
           <Button
             className={styles.findBtn1}
-            onClick={()=>navigate('/flight-search')}
+            onClick={() => navigate("/flight-search")}
             icon
             labelPosition='right'>
             Search

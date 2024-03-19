@@ -14,7 +14,6 @@ import AdminModal from "../admin-modal/adminModal";
 
 import styles from "./header.module.scss";
 
-
 function CustomHeader() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -113,25 +112,3 @@ function CustomHeader() {
 }
 
 export default CustomHeader;
-
-/*
-<Grid.Row style={{ paddingLeft: "5vh", paddingRight: "5vh" }}>
-				<Grid.Column style={{ marginTop: "-15px" }}>
-					<Button className={styles.flightsBtn} onClick={() => navigate("/")}>
-						<Icon name="paper plane outline" />
-						Flights
-					</Button>
-					{/* <Button
-						className={styles.flightsBtn}
-						onClick={() => navigate("/hotels")}
-					>
-						<Icon name="paper plane outline" />
-						Hotels
-					</Button>
-					<Button className={styles.flightsBtn}>
-						<Icon name="paper plane outline" />
-						Car Rental
-					</Button>
-					</Grid.Column>
-					</Grid.Row>
-					*/
